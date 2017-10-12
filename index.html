@@ -73,6 +73,47 @@
 					<section>
 						<h2>Challenges</h2>
 					</section>
+					<section>
+	          <h2>Herausforderungen</h2>
+	          <h4>CryptoWars 2.0/3.0</h4>
+	          <ul>
+	            <li><a href="http://www.wsj.com/article_email/justice-department-seeks-to-force-apple-to-extract-data-from-about-12-other-iphones-1456202213-lMyQjAxMTI2MjIzMzMyMTMwWj">Justice Department Seeks to Force Apple to Extract Data From About 12 Other iPhones</a></li>
+	            <li><a href="http://www.heise.de/security/meldung/Crypto-Wars-3-0-Thueringens-Verfassungsschutzchef-fordert-Hintertueren-in-Krypto-Messengern-3095311.html">Crypto Wars 3.0: Thüringens Verfassungsschutzchef fordert Hintertüren in Krypto-Messengern</a></li>
+	            <li><a href="http://arstechnica.com/tech-policy/2015/12/hillary-clinton-wants-manhattan-like-project-to-break-encryption/">Hillary Clinton wants “Manhattan-like project” to break encryption</a></li>
+	            <li><a href="https://media.ccc.de/v/32c3-7386-crypto_wars_part_ii">Crypto Wars Part II - The Empires Strike Back</a></li>
+	            <li><a href="http://www.heise.de/newsticker/meldung/Crypto-Wars-3-0-EU-Rat-diskutiert-Schluesselhinterlegung-2524990.html">Crypto Wars 3.0: EU-Rat diskutiert Schlüsselhinterlegung</a></li>
+	            <li><a href="http://www.ccc.de/de/updates/2015/ccc-fordert-ausstieg-aus-unverschlusselter-kommunikation">CCC fordert Ausstieg aus unverschlüsselter Kommunikation</a></li>
+	            <li><a href="https://agenda.weforum.org/2015/01/the-second-crypto-war-and-the-future-of-the-internet/">The second “Crypto War” and the future of the internet</a></li>
+	            <li><a href="https://netzpolitik.org/2015/cryptowar-verfassungsschutz-fordert-ein-ende-der-kryptierten-kommunikation/">Cryptowar: Verfassungsschutz fordert ein Ende der „kryptierten Kommunikation“</a></li>
+	            <li><a href="http://www.heise.de/newsticker/meldung/Obama-will-Verschluesselung-aufweichen-2520434.html">Obama will Verschlüsselung aufweichen</a></li>
+	          </ul>
+	        </section>
+					<section>
+	          <h2>Herausforderungen</h2>
+	          <h4>It's the econyomy, stupid!</h4>
+	          <ul>
+							<li><a href="http://arstechnica.com/security/2014/12/sloppy-security-hygiene-made-sony-pictures-ripe-for-hacking/">Sloppy security hygiene made Sony Pictures ripe for hacking</a></li>
+	          </ul>
+	        </section>
+					<section>
+						<h2>Komplexität, Vernetzung, Verwundbarkeit und Resilienz</h2>
+						<h4>(systemtheoretische Perspektive, Luhmann)</h4>
+						<ul>
+							<li>Systemtheorie: lose und enge Kopplung (&rarr; Vernetzungsgrad)</li>
+							<li>enge Kopplung erhöht <strong>Abhänigkeiten</strong> (Autonomieverluste)</li>
+							<li>enge Kopplung begünstigt <strong>Ausfälle</strong></li>
+							<li>enge Kopplung erhöht die <strong>Wahrscheinlichkeit von Angriffen</strong> (Hacking)</li>
+							<li>enge Kopplung erhöht die <strong>Attraktivität für Angriffe</strong></li>
+						</ul>
+	        </section>
+					<section>
+	          <h2>Everything is broken</h2>
+	          <ul>
+							<li>NSA v. SSL v. VPN (IPSec) v. Tor</li>
+							<li>SSL Attaken</li>
+							<li>Bad defaults</li>
+	          </ul>
+	        </section>
 				</section>
 				<section>
 					<section>
@@ -80,6 +121,96 @@
 					</section>
 					<section>
 						<h2>Security by Design</h2>
+					</section>
+					<section>
+					<h4>Risikoanalyse an Hand von Bedrohungsmodellen</h4>
+					<p>Bedrohungsmodelle:</p>
+					<ul>
+						<li>beschreiben Möglichkeiten von Angriffen und decken Verhaltensweisen oder Übertragungswege und -formen auf, die mit Risiken verbunden sein können</li>
+						<li>helfen Grenzen und Möglichkeiten von technischen Lösungen wie Ende-zu-Ende-Verschlüsselung oder Transportverschlüsselung besser einzuschätzen und eigenes Verhalten anzupassen.</li>
+					</ul>
+					</section>
+					<section>
+						<h2>Bedrohungsmodell</h2>
+						<h4>Analyse</h4>
+						<img src="images/threat_model.png" height="500px"/>
+					</section>
+					<section>
+					<h2>Die W-Fragen</h2>
+					<h4>Schutzintressen und -rahmen</h4>
+					<ul>
+						<li><strong>Was</strong> möchte ich schützen?</li>
+						<li><strong>Wie</strong> wahrscheinlich ist die Notwendigkeit es schützen zu müssen?</li>
+						<li>Vor <strong>wem</strong> möchte ich es schützen?</li>
+						<li><strong>Was</strong> sind die Konsequenzen, wenn der Schutz versagt?</li>
+						<li><strong>Wie viel</strong> Aufwand und Umstände möchte ich in Kauf nehmen und <strong>worauf</strong> möchte ich verzichten, um es zu schützen?</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Assets</h2>
+					<h4>Beispiele</h4>
+					<ul>
+						<li>Passwörter</li>
+						<li>Geld</li>
+						<li>Dateien (Fotos, Videos, Dokument, etc.)</li>
+						<li>Chats, Unterhaltungen, Korrespondenzen</li>
+						<li>Metadaten</li>
+						<li>private Geheimnisse, Betriebsgeheimnisse</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Angreifer</h2>
+					<h4>Beispiele</h4>
+					<ul>
+						<li>neugieriges Umfeld (Datenschutz)</li>
+						<li>Diebe, kriminelle Elemente</li>
+						<li>Nachrichtendienste mittels Massenüberwachung (NSA, GCHQ, BND)</li>
+						<li>Sicherheitsbehörden (BKA, Verfassungsschutz)</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Folgen bei Schutzversagen</h2>
+					<h4>Beispiele</h4>
+					<ul>
+						<li>Identitätsdiebstahl: Hacker/Script-Kiddie übernimmt Facebook-Account</li>
+						<li>Übernahme/Verlust des Geräts: Smartphone, Laptop, Tablet, E-Book-Reader</li>
+						<li>Datenverlust: Messenger-App, welche es erlaubt übermittelte Bildnachrichten abzugreifen, Systemverschlüsselung durch Erpressungs-Trojaner</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Angriffspotentiale</h2>
+					<h4>Beispiele</h4>
+					<ul>
+						<li><strong>physischer Gerätezugriff</strong> <em>Familienangehöriger installiert Überwachungssoftware auf meinem Gerät</em> </li>
+						<li><strong>Zugriff auf den Transportweg der Daten</strong> <em>Angreifer*In könnte das LAN/WLAN ausspionieren </em></li>
+						<li><strong>Phishing/Trojaner, Manipulation des Endpunktes der Kommunikation</strong> <em>Angreifer*In könnte eine Website gefälscht haben</em></li>
+						<li><strong>Manipulation des Systems/von Anwendungen</strong> <em> Angreifer*In nutzt Sicherheitslücken im System/ Applikationen </em></li>
+					</ul>
+					</section>
+					<section>
+					<h2>Fazit</h2>
+					<h4>Bedrohungsmodelle als Mittel zur Selbstermächtigung</h4>
+					<ul>
+						<li>Bedrohungsmodelle unterstützen bei der Abwägung von Risiken in Bezug auf Datensicherheit und -schutz</li>
+						<li>Bedrohungsmodelle identifizieren schützenswerte Güter (Assets), Angreifer*Innen, Risiken und Angriffspotentiale</li>
+						<li>Identifizierte Bedrohungen können besser eingeschätzt werden (Entscheidung für oder gegen Maßnahmen)</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Grenzen erweitern</h2>
+					<h4>Basis: Grundregeln und Maßnahmen</h4>
+					<ul>
+						<li>Update, Updates, Updates</li>
+						<li>Backups, Backups, Backups</li>
+						<li>Virenscanner (+/-)</li>
+						<li>Verschlüsselung/Verschleierung</li>
+						<li>Unplugged: Sensible Daten auf System ohne Netzzugang aufbewahren und verschlüsseln</li>
+					</ul>
+					</section>
+					<section>
+					<h2>Grenzen</h2>
+					<p><img src="images/xkcd_538_security.png" height="500px"></img>
+					</p>
 					</section>
 					<section>
 						<h2>Secure Coding</h2>
@@ -90,13 +221,84 @@
 						<h2>Hashing</h2>
 					</section>
 					<section>
-						<h2>Überblick</h2>
+						<h2>Kryptologische Hashfunktion</h2>
+					<ul>
+						<li>Einwegfunktionen: einfach ermittelbar, schwer umkehrbar</li>
+						<li>Schlüssellose Hashfunktionen: Einweg-Hashfunktionen und kollisionsresistente Hashfuntionen</li>
+						<li>Schlüsselabhänige Hashfunktionen: Message Authentication Codes (MAC)</li>
+						<li>kann zur Bildung von Fingerabdrücken zur Prüfung von Nachrichten(-blöcken) und zur Überprüfung von Dateidownloads verwendet werden</li>
+					</ul>
+				</section>
+				<section>
+				<h2>Kryptologische Hashfunktion</h2>
+				<h4>Übersicht (Auswahl)</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Verfahren</th>
+								<th>Veröffentlichung</th>
+								<th>Empfehlung</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MD5</td>
+								<td>1992</td>
+								<td>gilt als unsicher</td>
+							</tr>
+							<tr>
+								<td>SHA (SHA-Famlie)</td>
+								<td>1993 (SHA-0), 1995 (SHA-1), 2002 (SHA-256, SHA-384, SHA-512)</td>
+								<td>Im Februar 2017 wurde die erste Kollision für SHA-1 veröffentlicht. &rarr; <strong>SHA-512</strong> verwenden</td>
+							</tr>
+							<tr>
+								<td>RIPEMD</td>
+								<td>1992, 1996 (RIPEMD-128, RIPEMD-160)</td>
+								<td>kollisionen für die Variante von 1992 möglich</td>
+							</tr>
+							<tr>
+								<td>Whirlpool</td>
+								<td>2003</td>
+								<td>keine Kollisionen bekannt, 512 Bit Hashwert, zehn AES-Runden</td>
+							</tr>
+							<tr>
+								<td>SHA-3/Keccak</td>
+								<td>2011 (3. Version)</td>
+								<td>Alternative zu SHA-2</td>
+							</tr>
+							<tr>
+								<td>BLAKE</td>
+								<td>2010 (BLAKE2 2012)</td>
+								<td>BLAKE war einer der Finalisten im SHA-3-Auswahlverfahren der NIST.</td>
+							</tr>
+						</tbody>
+					</table>
+			 </section>
+					<section>
+						<h2>SHA3</h2>
+						<ul>
+						 <li>Finalist</li>
+						 <li></li>
+						</ul>
 					</section>
 					<section>
-						<h2>SHA</h2>
+						<h2>SHA3</h2>
+						<h4>Code-Bespiel C#</h4>
+					</section>
+					<section>
+						<h2>SHA3</h2>
+						<h4>Code-Bespiel Rust</h4>
 					</section>
 					<section>
 						<h2>Blake2</h2>
+					</section>
+					<section>
+						<h2>SHA3</h2>
+						<h4>Code-Bespiel C#</h4>
+					</section>
+					<section>
+						<h2>SHA3</h2>
+						<h3>Code-Bespiel Rust</h3>
 					</section>
 				</section>
 				<section>
@@ -104,26 +306,412 @@
 						<h2>Schlüsselableitung (KDF)</h2>
 				  </section>
 					<section>
+			     <h2>Exkus</h2>
+			     <h4>Schlüsselableidungsverfahren (KDF)</h2>
+			     <ul>
+			       <li>kryptologische Hashfunktion</li>
+			       <li>speziell für das Hashen und Speichern von Passwörtern entwickelt wurde</li>
+			       <li>mit dem Ziel entwickelt, das Hashing möglichst aufwändig zu gestalten</li>
+			     </ul>
+			   </section>
+			    <section>
+			     <h2>Schlüsselableidungsverfahren</h2>
+			     <h4>Übersicht (Auswahl)</h2>
+			       <table>
+			         <thead>
+			           <tr>
+			             <th>Verfahren</th>
+			             <th>basiert auf</th>
+			             <th>Empfehlung</th>
+			           </tr>
+			         </thead>
+			         <tbody>
+			           <tr>
+			             <td>PBKDF2</td>
+			             <td><code>DK = PBKDF2(PRF, Password, Salt, c, dkLen)</code></td>
+			             <td>vom NIST standardisiert; mit min.  <strong>100 000</strong> Iteratioen durchführen</td>
+			           </tr>
+			           <tr>
+			             <td>scrypt</td>
+			             <td>sala20/8</td>
+			             <td>mit niedrigen Parametern durch GPU-Hardware <strong>angereibarer als bcrypt</strong>; Seitenkanalattacke durch cache timing theoretisch möglich</td>
+			           </tr>
+			           <tr>
+			             <td>bcrypt</td>
+			             <td>blowfish; Länge des Passworts auf 56 Bytes beschränkt</td>
+			             <td>angreifbar (Wörterbuchangriff oder Brute-Force-Methode), bessere Ergebnisse als PBKDF2</td>
+			           </tr>
+			           <tr>
+			             <td>Argon2</td>
+			             <td>Blake2b</td>
+			             <td>Empfehlung der unabhänigen Password Hashing Competition (PHC); weitere Finalisten: Catena, Lyra2, Makwa und yescrypt</td>
+			           </tr>
+			         </tbody>
+			       </table>
+			   </section>
+					<section>
 						<h2>PBKD2</h2>
+						<h4>Code-Bespiel C#</h4>
 					</section>
 					<section>
 						<h2>Argon2</h2>
+						<h4>Code-Bespiel C#</h4>
 					</section>
 					<section>
-						<h2>bcrypt</h2>
+						<h2>Argon2</h2>
+						<h4>Code-Bespiel Rust</h4>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Authentifierte Verschlüsselung</h2>
 					</section>
 					<section>
-						<h2>scrypt</h2>
+	          <h2>Symmetrische Verschlüsselung (1/4)</h2>
+	          <p>
+	            <small><a class="test" href="https://de.wikipedia.org/wiki/Symmetrisches_Kryptosystem">
+	                https://de.wikipedia.org/wiki/Symmetrisches_Kryptosystem
+	              </a></small>
+	          </p>
+	          <p>Gleicher Schlüssel für Verschlüsselung und Entschlüsselung der Nachricht (oder Berechnung beider Schlüssel auseinander)</p>
+	          <p>
+	            <small><a class="test" href="https://www.youtube.com/watch?v=NK5Z6Oj0YkM">
+	                Video zur Einführung in symmetrische Verschlüsselung (englisch)</a></small>
+	          </p>
+	        </section>
+	        <section>
+	          <h2>Symmetrische Verschlüsselung (2/4)</h2>
+
+	          <p>
+	            <br />Die Verschlüsselung hat zwei grundsätzliche Ziele:
+	            <br />
+	            <b>Konfusion und Diffusion</b>
+	          </p>
+
+	          <p>
+	            <ul>
+	              <br />
+	              <li><b>1.) Konfusion:</b>
+	                <ul>
+	                  <li>Zusammenhang zwischen Geheimtext und Schlüssel so komplex wie möglich machen um damit Kryptoanalyse zu erschweren</li>
+	                  <li>Erreicht wird das z. B. durch nichtlineare Substitutionen von Eingabe und Ausgabe</li>
+	                </ul>
+	              </li>
+	            </ul>
+	        </section>
+	        <section>
+	          <h2>Symmetrische Verschlüsselung (3/4)</h2>
+
+	          <ul>
+	            <br />
+	            <li><b>2.) Diffusion:</b>
+	              <ul>
+	                <li>Auflösen von statistischen Strukturen des Klartextes</li>
+	                <li>statistische Analyse nach Buchstabenhäufigkeit im Chiffretext läuft ins Leere </li>
+	              </ul>
+	            </li>
+	            <p>
+	              <br />guter Chiffretext ist nicht von Zufallszahlen und -zeichen zu unterscheiden</p>
+	        </section>
+	        <section>
+	          <h2>Symmetrische Verschlüsselung (4/4)</h2>
+	          <p>
+	            <br /><b>2 Verfahrenstypen:</b></p>
+	          <ul>
+	            <li>Stromverschlüsselung</li>
+	            <li>Blockverschlüsselung</li>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2>Stromverschlüsselung (1/2)</h2>
+	          <p>
+	            Schema
+	          </p>
+	          <p>
+	            <img src="images/stromverschluesselung.png" />
+	          </p>
+
+	        </section>
+	        <section>
+	          <h2>Stromverschlüsselung (2/2)</h2>
+	          <p>
+	            <small><a class="test" href="https://de.wikipedia.org/wiki/Stromchiffre">
+	                https://de.wikipedia.org/wiki/Stromchiffre
+	              </a></small>
+	          </p>
+	          <ul>
+	            <li>Zeichen des Klartextes werden mit den Zeichen eines Schlüsselstroms verknüpft</li>
+	            <li>Schlüsselstrom ist als pseudozufällige Zeichenfolge aus dem Schlüssel abgeleitet</li>
+	            <li>jedes Klartextzeichen kann sofort in ein chiffriertes Ausgabezeichen übersetzen werden</li>
+	            <li>besonders für Echtzeitübertragungen geeignet, z. B. für Mobilfunk</li>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2>Blockverschlüsselung (1/3)</h2>
+	          <p>
+	            Schema
+	          </p>
+	          <p>
+	            <img src="images/blockverschluesselung.png" height="500px" />
+	          </p>
+	        </section>
+	        <section>
+	          <h2>Blockverschlüsselung (2/3)</h2>
+	          <p>
+	            <small><a class="test" href="https://de.wikipedia.org/wiki/Blockchiffre">
+	                https://de.wikipedia.org/wiki/Blockchiffre
+	              </a></small>
+	          </p>
+	          <ul>
+	            <li>Klartext fester Länge (Block) wird – bestimmt durch Schlüssel und Chiffrealgorithmus – in einen Geheimtext fester Länge gewandelt</li>
+	            <li>mehrere Zeichen (Block) werden in einem Schritt ver- bzw. entschlüsselt, daher schnell</li>
+	            <li>Blockchiffren können jeweils nur einen einzigen Block verschlüsseln</li>
+	            <li>daher wird für Texte beliebiger Länge ein krypto&shy;graphi&shy;scher Betriebsmodus definiert, der die Anwendung des Verschlüsselungsalgorithmus auf den Datenstrom (mehrere Blöcke) festlegt</li>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2>Blockverschlüsselung (3/3)</h2>
+	          <p>
+	            <small><a class="test" href="https://de.wikipedia.org/wiki/Blockchiffre">
+	                https://de.wikipedia.org/wiki/Blockchiffre
+	              </a></small>
+	          </p>
+	          <ul>
+	            <li>modernen Blockchiffren als iterierte Blockchiffren konzipiert:
+	              <ul>
+	                <li>Eingabe wird in mehreren gleich aufgebauten Runden verarbeitet</li>
+	                <li>Dazu werden aus dem Schlüssel sogenannte Rundenschlüssel abgeleitet</li>
+	              </ul>
+	            </li>
+	            <br />
+	          </ul>
+	        </section>
+				</section>
+				<section>
+					<section>
+						<h2>Transportverschlüsselung</h2>
 					</section>
+					<section>
+	          <h2>HTTPS (SSL/TLS)</h2>
+	          <ul>
+	            <li>HTTPS: Standardverschlüsselung beim Abruf von Websites</li>
+	            <li>SSL/TLS schützten die Übermittlung der Daten (Transportschicht)</li>
+	            <li>Komplexes Protokoll, mit zwei Hauptzielen:
+	              <ul>
+	                <li>Verschlüsselung (Daten vor anderen verbergen)</li>
+	                <li>Identifikation (Können sich zwei Kommunikationspartner vertrauen?)</li>
+	              </ul>
+	            </li>
+	            <li>Zertifikate auf Anbieterseite (Website, WebServer) notwendig (Vertrauensdilemma)</li>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2>SSL/TLS Protokoll (I)</h2>
+	          <ol>
+	            <li>Handshake: Server und Client (Browser) vereinbaren Art der Verschlüsselung (Wie wollen wir uns miteinander unterhalten?)</li>
+	            <li>Server schickt ein Zertifikat und einen Schlüssel</li>
+	            <li>Client: Beginne zu verschlüsseln</li>
+	            <li>Server: Beginne zu verschlüsseln</li>
+	            <li>SSL/TLS-Verschlüsselung etabliert</li>
+	          </ol>
+	        </section>
+	        <section>
+	          <h2>SSL/TLS Protokoll (II)</h2>
+	          <img src="images/fig2SSL.gif" />
+	          <p><a href="http://en.wikipedia.org/wiki/Transport_Layer_Security#Cipher">Chiper Suites</a></p>
+	        </section>
+	        <section>
+	          <h2>SSL/TLS Protokoll (III)</h2>
+	          <iframe width="640" height="390" src="https://www.youtube.com/embed/iQsKdtjwtYI" frameborder="0" allowfullscreen></iframe>
+	          <p style="font-size:0.6em;"><a href="https://www.youtube.com/embed/iQsKdtjwtYI">How SSL works tutorial &ndash; with HTTPS example</a></p>
+	        </section>
+	        <section>
+	          <h2>Broken Wing</h2>
+	          <h4>SSL/TLS &amp; Sicherheit (I)</h4>
+	          <table>
+	            <thead>
+	              <tr>
+	                <th>Verwundbarkeit</th>
+	                <th>Attacke</th>
+	              </tr>
+	            </thead>
+	            <tbody>
+	              <tr>
+	                <td>TLS 1.2</td>
+	                <td><a href="http://www.mitls.org/pages/attacks/SLOTH">SLOTH</a></td>
+	              </tr>
+	              <tr>
+	                <td>TLS 1.0 (RC4)</td>
+	                <td><a href="http://resources.infosecinstitute.com/ssl-attacks/">Beast</a></td>
+	              </tr>
+	              <tr>
+	                <td>SSL 3.0</td>
+	                <td><a href="https://en.wikipedia.org/wiki/POODLE">POODLE</a> </td>
+	              </tr>
+	              <tr>
+	                <td>SSL 2.0</td>
+	                <td><a href="https://drownattack.com/">DROWN</a> </td>
+	              </tr>
+	            </tbody>
+	          </table>
+	        </section>
+	        <section>
+	          <h2>Broken Wing</h2>
+	          <h4>SSL/TLS &amp; Sicherheit (II)</h4>
+	          <table>
+	            <thead>
+	              <tr>
+	                <th>Verwundbarkeit</th>
+	                <th>Attacke</th>
+	              </tr>
+	            </thead>
+	            <tbody>
+	              <tr>
+	                <td>RSA-Export-Keys</td>
+	                <td><a href="http://www.washingtonpost.com/blogs/the-switch/wp/2015/03/03/freak-flaw-undermines-security-for-apple-and-google-users-researchers-discover/">FREAK</a></td>
+	              </tr>
+	              <tr>
+	                <td>Downgrading-Attacken</td>
+	                <td><a href="https://weakdh.org/">Logjam</a>, SSL-Strip</td>
+	              </tr>
+	              <tr>
+	                <td>Kompression</td>
+	                <td><a href="https://en.wikipedia.org/wiki/CRIME_%28security_exploit%29">CRIME and BREACH attacks</a> </td>
+	              </tr>
+	              <tr>
+	                <td>Cache-Timining-Attacke/Implementierung</td>
+	                <td><a href="http://tonyarcieri.com/cream-the-scary-ssl-attack-youve-probably-never-heard-of">CREAM</a>, Heartbleet</td>
+	              </tr>
+	            </tbody>
+	          </table>
+	        </section>
+	        <section>
+	          <h2><a href="https://jimshaver.net/2015/02/11/decrypting-tls-browser-traffic-with-wireshark-the-easy-way/">Decrypting TLS Browser Traffic With Wireshark</a></h2>
+	          <img src="images/wireshark.png" />
+	        </section>
+	        <section>
+	          <h2>Broken Wing</h2>
+	          <h4>SSL/TLS &amp; Sicherheit (IV)</h4>
+	          <p>Das Problem mit den Root Zertifikaten</p>
+	          <ul>
+	            <li><a href="http://arstechnica.com/security/2015/02/ssl-hijacker-behind-superfish-debacle-imperils-big-number-of-users/">“SSL hijacker” behind Superfish debacle imperils large number of users</a></li>
+	            <li><a href="https://technet.microsoft.com/en-us/library/security/2982792.aspx">Microsoft Security Advisory: Improperly Issued Digital Certificates Could Allow Spoofing</a></li>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2><a href="https://www.ssllabs.com/ssltest/">SSL Test</a></h2>
+	          <h4>Transportverschlüsselung prüfen</h4>
+	          <img src="images/SSLServerTest.png" />
+	        </section>
+	        <section>
+	          <h2>Deploying TLS 1.3: the great, the good and the bad</h2>
+	          <h4> Improving the encrypted the web, one round-trip at a time </h4>
+	          <video width="600" height="360" controls>
+	              <source src="https://cdn.media.ccc.de/congress/2016/h264-hd/33c3-8348-eng-deu-spa-Deploying_TLS_13_the_great_the_good_and_the_bad_hd.mp4" type="video/mp4"></source>
+	              <source src="https://cdn.media.ccc.de/congress/2016/webm-hd/33c3-8348-eng-deu-spa-Deploying_TLS_13_the_great_the_good_and_the_bad_webm-hd.webm" type="video/webm"></source>
+	             Ihr Browser unterstützt das Objekt nicht!
+	          </video>
+	        </section>
+	        <section>
+	          <h2>Exkurs: <a href="http://http2-explained.haxx.se/content/en/">HTTP/2</a></h2>
+	          <h4>HTTP Nachfolger</h4>
+	          <ul>
+	            <li>Kompatibilität zu den Vorgängern</li>
+	            <li>Verschlüsselung defacto Standard</li>
+	            <li>Geschwindigkeitssteigerung:</li>
+	            <ul>
+	              <li>Header Compression (Vorbild HSTS, Vermeidung von Caching/Timing-Attacken)</li>
+	              <li>Server Push</li>
+	              <li>Multiplexing</li>
+	              <li>Problembehebung(en) von HTTP 1.1</li>
+	            </ul>
+	          </ul>
+	        </section>
+	        <section>
+	          <h2>Bedrohungsmodell</h2>
+	          <h4>Tracking/Transportverschlüsselung</h4>
+	          <img src="images/threat_model_matrix_tracking.png" />
+	        </section>
+					<section>
+	          <h2>SSL in .Net und C#</h2>
+	          <ul>
+							<li>SSLStream</li>
+							<li>Alternative: OpenSSL ? (Heartbleat, CREAM, usw.)</li>
+	          </ul>
+	        </section>
+					<section>
+	          <h2>SSL in .Net und C#</h2>
+	          <ul>
+							<li>SSLStream</li>
+							<li>Alternative OpenSSL</li>
+	          </ul>
+	        </section>
+					<section>
+	          <h2>SSL in Rust</h2>
+	          <ul>
+							<li>OpenSSL Bindings</li>
+							<li>Hoffnung: ring (Borring SSL)</li>
+	          </ul>
+	        </section>
+					<section>
+	          <h2>Konfiguration im WebServer</h2>
+	          <ul>
+							<li></li>
+							<li></li>
+	          </ul>
+	        </section>
 				</section>
 				<section>
-					<h2>Authentifierte Verschlüsselung</h2>
+					<section>
+						<h2>Ende-zu-Ende-Verschlüsselung</h2>
+					</section>
+					<section>
+						<h2>Perfect Forward Secrecy</h2>
+						<ul>
+							<li>Späteres Aufdecken oder Brechen von geheimen Nutzerschlüsseln darf es nicht erlauben, frühere oder künftige Nachrichten zu entschlüsseln
+							</li>
+							<li>⇒ neue Schlüssel für jede Nachricht erzeugen</li>
+						</ul>
+					</section>
+					<section>
+						<h2>PFS-Problem</h2>
+						<ul>
+							<li>Schlüsselerzeugung <em>ohne</em> Schlüsselaustausch</li>
+							<li>erfordert, dass beide Teilnehmer online sind</li>
+							<li>erfordert einige Hilfsdaten in beide Richtungen</li>
+							<li>die Forderung FS ist strenggenommen unvereinbar mit asynchronen Nachrichten (wie SMS)</li>
+							<li>durch <a href="https://signal.org/docs/specifications/doubleratchet/">Double-Ratchet</a> gelöst. (Achtung, nicht alle Messenger-Apps implementieren Double Rachtet (z.B. Threema, Telegram)</li>
+							<li>OMEMO</li>
+						</ul>
+					</section>
+					<section>
+						<h2>OTR</h2>
+						<ul>
+							<li>Borisov/Goldberg/Brewer, 2004:<br />
+								<a href="https://otr.cypherpunks.ca/otr-wpes.pdf">https://otr.cypherpunks.ca/otr-wpes.pdf</a>
+							</li>
+						</ul>
+						<p>&nbsp;</p>
+						<h4>Forderungen an OTR</h4>
+						<ul>
+							<li>Beglaubigung <em>während</em> der Konversation</li>
+							<li>Abstreitbarkeit <em>nach</em> der Konversation</li>
+							<li>Perfect Forward Secrecy (PFS)</li>
+							<li>Alle 3 Features auch in Nachfolgern (OMEMO, Double Ratchet, mpOTR)</li>
+							<li>einfaches OTR kann als Layer auf Chatsystem laufen (z.B. Plugin in ICQ/Client), bessere Protokolle brauchen Servererweiterung (XEP-0384 für Clients verlangt 0334 und/oder 0313 für Server)</li>
+						</ul><br />
+					</section>
+					<section>
+						<h2>The Good, The Bad and the Ugly</h2>
+						<h4>Ende-zu-Ende Verschlüsselung implemeniteren</h4>
+						<ul>
+						  <li>Hoch gelobtes Code-Beipiel: Signal App (Java)</li>
+							<li>Wire App (Rust, Java)</li>
+							<li>Double Ratchet in C#: <a href="https://github.com/langboost/libsignal-protocol-pcl">libsignal-protocol-pcl</a>?</li>
+							<li>Obsurity: Telegramm (bittet nicht nachmachen)</li>
+						</ul>
+				  </section>
 				</section>
-				<section>
-					<h2>Transportverschlüsselung</h2>
-				</section>
-				<section>
-					<h2>Ende-zu-Ende-Verschlüsselung</h2>
 				</section>
 				<section>
 					<h2>Abschlussrunde</h2>
