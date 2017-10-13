@@ -32,11 +32,10 @@
 						12.10.2017
 					</p>
 				</section>
-
 				<section>
 					<h2>Agenda</h2>
 					<ul>
-						<li>Wann Cry – Security Nightmares</li>
+						<li>Wanna Cry – Security Nightmares</li>
 						<li>Security by Design und Secure Coding</li>
 						<li>Secure Coding : Grundlagen (C#, Rust)</l>
 						<li>Hashing und Schlüsselableitung (KDF)</li>
@@ -59,16 +58,22 @@
 				</section>
 				<section>
 					<section>
-						<h2>Wanna Cry? – Security Nightmares</h2>
+						<h2>Wanna Cry? - Nighmares</h2>
 					</section>
 					<section>
 						<h2>Wanna Cry</h2>
+						<ul>
+							<li>basisert auf Exploit der Sicherheitslücke MS17-010 im SMB-Protokoll (auch NetBIOS) von Microsoft</li>
+							<li>alle Windowsversionen betroffen</li>
+							<li>Randsomeware mit RSA-Verschlüsselung</li>
+							<li>Problem: nicht aktuelle Windwos-Varianten, Windows XP</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Heartbleed</h2>
+						<img src="images/heartbleed_explanation.png"/>
 					</section>
 					<section>
-						<h2>CryptoCurrency</h2>
+						<h2><a href="https://medium.com/@neha/cryptographic-vulnerabilities-in-iota-9a6a9ddc4367">Cryptographic vulnerabilities in IOTA</a></h2>
 					</section>
 					<section>
 						<h2>Challenges</h2>
@@ -107,7 +112,7 @@
 						</ul>
 	        </section>
 					<section>
-	          <h2>Everything is broken</h2>
+	          <h2><a href="https://www.heise.de/newsticker/meldung/Hackercamp-SHA2017-All-Computers-are-broken-3794575.html">Everything is broken</a></h2>
 	          <ul>
 							<li>NSA v. SSL v. VPN (IPSec) v. Tor</li>
 							<li>SSL Attaken</li>
@@ -121,6 +126,37 @@
 					</section>
 					<section>
 						<h2>Security by Design</h2>
+						<blockquote>»Secure by design, in software engineering, means that the software has been designed from the ground up to be secure.
+							Malicious practices are taken for granted and care is taken to
+							minimize impact when a security vulnerability is discovered or on invalid user input.« (<a href="https://en.wikipedia.org/wiki/Secure_by_design">Wikipedia</a>)
+						</blockquote>
+					</section>
+					<section>
+						<h2>Softwarequalität</h2>
+						<ul>
+							<li>Agilität: Make it run, make it clean, make it secure?</li>
+							<li>Penetrationtests</li>
+							<li>Fuzzing</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Mindset &amp; Hacker Ehtics</h2>
+						<ul>
+							<li>Greyhat</li>
+							<li>Advocatus Diaboli</li>
+							<li>Weiterbildung, Training, Intressse</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/security_primer.png"/>
+					</section>
+					<section>
+						<img src="images/GrayHatC_cover.png"/>
+					</section>
+					<section>
+						<ul>
+							<li><a href="Cyber Security Books">Popular Cyber Security Books</a></li>
+						</ul>
 					</section>
 					<section>
 					<h4>Risikoanalyse an Hand von Bedrohungsmodellen</h4>
@@ -189,7 +225,7 @@
 					</section>
 					<section>
 					<h2>Fazit</h2>
-					<h4>Bedrohungsmodelle als Mittel zur Selbstermächtigung</h4>
+					<h4>Bedrohungsmodelle als Mittel zur Rationalisierung</h4>
 					<ul>
 						<li>Bedrohungsmodelle unterstützen bei der Abwägung von Risiken in Bezug auf Datensicherheit und -schutz</li>
 						<li>Bedrohungsmodelle identifizieren schützenswerte Güter (Assets), Angreifer*Innen, Risiken und Angriffspotentiale</li>
@@ -214,6 +250,138 @@
 					</section>
 					<section>
 						<h2>Secure Coding</h2>
+						<ul>
+							<li>Subset devensiver Programmierung</li>
+							<li>Verständlichkeit und Nachvollziebarkeit des Code erhöhen (auditierbar, wartbar)</li>
+							<li>Verwandschaft zum CleanCoding</li>
+							<li>Security v Obscurity</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Secure Coding</h2>
+						<h4>Techniken</h4>
+						<ul>
+							<li>gute Kapselung (schwierig zu erreichen)</li>
+							<li>Strategie im Umgang Legacy Code</li>
+							<li>Input and output handling</li>
+							<li>Ressource-Balacing</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Secure Coding</h2>
+						<h4>Techniken</h4>
+						<ul>
+							<li>Proaktiver Umgang mit potentiellen Bugs</li>
+							<li>Design by contract und Assertions</li>
+							<li>C#, Java, Ruby, Python …: Exception &gt; Return Codes</li>
+							<li>Rust v C/Go: Error-Type+Matching/ErrorChain &gt; Return Codes</li>
+							<li><a href="http://www.ccs.neu.edu/home/lieber/courses/csg110/sp08/Pragmatic%20Quick%20Reference.htm">The Pragmatic Programmer Quick Reference Guide</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Grundlagen</h2>
+					</section>
+					<section>
+						<h2>Best Practices: <a href="https://www.owasp.org/index.php/.NET_Security_Cheat_Sheet">.NET Security Cheat Sheet</a></h2>
+					</section>
+					<section>
+						<h2>Exception Handling in C#</h2>
+						<ul>
+							<li>Best Practice</li>
+							<li>UnexcpectedExcetion Handler</li>
+							<li>catch ins Nirvana</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Design by Contract in C#</h2>
+						<ul>
+							<li><a href="https://msdn.microsoft.com/de-de/library/dd264808(v=vs.110).aspx">Code Contracts</a></li>
+							<li>Design by Contract v UnitTesting</li>
+						</ul>
+					</section>
+					<section>
+						<h4>SecureString</h4>
+					  <pre><code>
+// Instantiate the secure string.
+SecureString securePwd = new SecureString();
+ConsoleKeyInfo key;
+
+Console.Write("Enter password: ");
+	do
+	{
+		key = Console.ReadKey(true);
+
+		// Ignore any key out of range.
+		if (((int) key.Key) >= 65 &amp;&amp; ((int) key.Key <= 90))
+		{
+			// Append the character to the password.
+			securePwd.AppendChar(key.KeyChar);
+			Console.Write("*");
+	  }
+		// Exit if Enter key is pressed.
+  } while (key.Key != ConsoleKey.Enter);
+	 Console.WriteLine();
+	securePwd.Dispose();
+					  </code></pre>
+					</section>
+					<section>
+						<h2>How secure is SecureString?</h2>
+						<blockquote>
+							»Overall, SecureString is more secure than String because it limits the exposure of sensitive string data.
+							However, those strings may still be exposed to any process or operation that has access to raw memory,
+							such as a malicious process running on the host computer, a process dump, or a user-viewable swap file.« – <a href="https://msdn.microsoft.com/en-us/library/system.security.securestring.aspx#HowSecure">Code-Doku</a>
+						</blockquote>
+					</section>
+					<section>
+						<h2>How secure is SecureString?</h2>
+						<blockquote>
+							»Instead of using SecureString to protect passwords, the recommended alternative is to use an opaque handle
+							to credentials that are stored outside of the process.« – <a href="https://msdn.microsoft.com/en-us/library/system.security.securestring.aspx#HowSecure">Code-Doku</a>
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Andere Probleme in C#</h2>
+						<ul>
+							<li><code>goto</code></li>
+							<li>Crypto API unter verschienden Windows Plattformen/.Net Platformen</li>
+							<li>Leaking Information: z. B. Logging, Crash und Stacktrace im Eventlog</li>
+							<li>DLL-Hölle: in GAC we trust?</li>
+							<li>Pluginsysteme v Trust</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Andere Probleme in C#</h2>
+						<ul>
+							<li>unsignierte Assemblies</li>
+							<li>Zugriff auf Win32 API</li>
+							<li>Userkontext, Systemkontext, Impersionierung</li>
+							<li><code>unsafe</code> und Pointer-Gedöns</li>
+							<li>COM-Anbindung</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Error Handling in Rust</h2>
+						 <ul>
+							 <li><a href="https://doc.rust-lang.org/book/first-edition/error-handling.html#error-handling">Error Handling</a></li>
+							 <li><a href="http://brson.github.io/2016/11/30/starting-with-error-chain">error-chain - Consistent error handling for Rust</a></li>
+							 <li><a href="https://github.com/rust-lang/rfcs/blob/master/text/0243-trait-based-exception-handling.md">RFC 0243</a>: ?-Operator</li>
+						 </ul>
+					</section>
+					<section>
+						<h2>Design by Contract in Rust</h2>
+						 <p><a href="https://github.com/nrc/libhoare">LibHoare</a></p>
+					</section>
+					<section>
+						<h2>Crypto in Rust</h2>
+						 <ul>
+							 <li>vorzüge von Rust als systemnahe Programmiersprache</li>
+							 <li>Aktuelle Empehlung: <a href="https://github.com/briansmith/ring">ring</a>, <a href="https://github.com/dnaq/sodiumoxide">libsodium Wrapper</a></li>
+							 <li>rust-crypto mit Vorsicht verwenden</li>
+							 <li>Fehlende Auditierung</li>
+						 </ul>
 					</section>
 				</section>
 				<section>
@@ -276,13 +444,6 @@
 			 </section>
 					<section>
 						<h2>SHA3</h2>
-						<ul>
-						 <li>Finalist</li>
-						 <li></li>
-						</ul>
-					</section>
-					<section>
-						<h2>SHA3</h2>
 						<h4>Code-Bespiel C#</h4>
 					</section>
 					<section>
@@ -291,14 +452,7 @@
 					</section>
 					<section>
 						<h2>Blake2</h2>
-					</section>
-					<section>
-						<h2>SHA3</h2>
 						<h4>Code-Bespiel C#</h4>
-					</section>
-					<section>
-						<h2>SHA3</h2>
-						<h3>Code-Bespiel Rust</h3>
 					</section>
 				</section>
 				<section>
@@ -306,7 +460,7 @@
 						<h2>Schlüsselableitung (KDF)</h2>
 				  </section>
 					<section>
-			     <h2>Exkus</h2>
+			     <h2>Exkurs</h2>
 			     <h4>Schlüsselableidungsverfahren (KDF)</h2>
 			     <ul>
 			       <li>kryptologische Hashfunktion</li>
@@ -336,19 +490,33 @@
 			             <td>sala20/8</td>
 			             <td>mit niedrigen Parametern durch GPU-Hardware <strong>angereibarer als bcrypt</strong>; Seitenkanalattacke durch cache timing theoretisch möglich</td>
 			           </tr>
-			           <tr>
-			             <td>bcrypt</td>
-			             <td>blowfish; Länge des Passworts auf 56 Bytes beschränkt</td>
-			             <td>angreifbar (Wörterbuchangriff oder Brute-Force-Methode), bessere Ergebnisse als PBKDF2</td>
-			           </tr>
-			           <tr>
-			             <td>Argon2</td>
-			             <td>Blake2b</td>
-			             <td>Empfehlung der unabhänigen Password Hashing Competition (PHC); weitere Finalisten: Catena, Lyra2, Makwa und yescrypt</td>
-			           </tr>
-			         </tbody>
 			       </table>
 			   </section>
+				 <section>
+				 <h2>Schlüsselableidungsverfahren</h2>
+				 <h4>Übersicht (Auswahl)</h2>
+					 <table>
+						 <thead>
+							 <tr>
+								 <th>Verfahren</th>
+								 <th>basiert auf</th>
+								 <th>Empfehlung</th>
+							 </tr>
+						 </thead>
+						 <tbody>
+							 <tr>
+								 <td>bcrypt</td>
+								 <td>blowfish; Länge des Passworts auf 56 Bytes beschränkt</td>
+								 <td>angreifbar (Wörterbuchangriff oder Brute-Force-Methode), bessere Ergebnisse als PBKDF2</td>
+							 </tr>
+							 <tr>
+								 <td>Argon2</td>
+								 <td>Blake2b</td>
+								 <td>Empfehlung der unabhänigen Password Hashing Competition (PHC); weitere Finalisten: Catena, Lyra2, Makwa und yescrypt</td>
+							 </tr>
+						 </tbody>
+					 </table>
+			 </section>
 					<section>
 						<h2>PBKD2</h2>
 						<h4>Code-Bespiel C#</h4>
@@ -367,7 +535,7 @@
 						<h2>Authentifierte Verschlüsselung</h2>
 					</section>
 					<section>
-	          <h2>Symmetrische Verschlüsselung (1/4)</h2>
+	          <h4>Symmetrische Verschlüsselung (1/4)</h4>
 	          <p>
 	            <small><a class="test" href="https://de.wikipedia.org/wiki/Symmetrisches_Kryptosystem">
 	                https://de.wikipedia.org/wiki/Symmetrisches_Kryptosystem
@@ -380,17 +548,15 @@
 	          </p>
 	        </section>
 	        <section>
-	          <h2>Symmetrische Verschlüsselung (2/4)</h2>
+	          <h4>Symmetrische Verschlüsselung (2/4)</h4>
 
 	          <p>
-	            <br />Die Verschlüsselung hat zwei grundsätzliche Ziele:
-	            <br />
+	            >Die Verschlüsselung hat zwei grundsätzliche Ziele:
 	            <b>Konfusion und Diffusion</b>
 	          </p>
 
 	          <p>
 	            <ul>
-	              <br />
 	              <li><b>1.) Konfusion:</b>
 	                <ul>
 	                  <li>Zusammenhang zwischen Geheimtext und Schlüssel so komplex wie möglich machen um damit Kryptoanalyse zu erschweren</li>
@@ -400,7 +566,7 @@
 	            </ul>
 	        </section>
 	        <section>
-	          <h2>Symmetrische Verschlüsselung (3/4)</h2>
+	          <h4>Symmetrische Verschlüsselung (3/4)</h4>
 
 	          <ul>
 	            <br />
@@ -414,7 +580,7 @@
 	              <br />guter Chiffretext ist nicht von Zufallszahlen und -zeichen zu unterscheiden</p>
 	        </section>
 	        <section>
-	          <h2>Symmetrische Verschlüsselung (4/4)</h2>
+	          <h4>Symmetrische Verschlüsselung (4/4)</h4>
 	          <p>
 	            <br /><b>2 Verfahrenstypen:</b></p>
 	          <ul>
@@ -423,7 +589,7 @@
 	          </ul>
 	        </section>
 	        <section>
-	          <h2>Stromverschlüsselung (1/2)</h2>
+	          <h4>Stromverschlüsselung (1/2)</h4>
 	          <p>
 	            Schema
 	          </p>
@@ -433,7 +599,7 @@
 
 	        </section>
 	        <section>
-	          <h2>Stromverschlüsselung (2/2)</h2>
+	          <h4>Stromverschlüsselung (2/2)</h4>
 	          <p>
 	            <small><a class="test" href="https://de.wikipedia.org/wiki/Stromchiffre">
 	                https://de.wikipedia.org/wiki/Stromchiffre
@@ -447,7 +613,7 @@
 	          </ul>
 	        </section>
 	        <section>
-	          <h2>Blockverschlüsselung (1/3)</h2>
+	          <h4>Blockverschlüsselung (1/3)</h4>
 	          <p>
 	            Schema
 	          </p>
@@ -456,7 +622,7 @@
 	          </p>
 	        </section>
 	        <section>
-	          <h2>Blockverschlüsselung (2/3)</h2>
+	          <h4>Blockverschlüsselung (2/3)</h4>
 	          <p>
 	            <small><a class="test" href="https://de.wikipedia.org/wiki/Blockchiffre">
 	                https://de.wikipedia.org/wiki/Blockchiffre
@@ -470,7 +636,7 @@
 	          </ul>
 	        </section>
 	        <section>
-	          <h2>Blockverschlüsselung (3/3)</h2>
+	          <h4>Blockverschlüsselung (3/3)</h4>
 	          <p>
 	            <small><a class="test" href="https://de.wikipedia.org/wiki/Blockchiffre">
 	                https://de.wikipedia.org/wiki/Blockchiffre
@@ -486,6 +652,59 @@
 	            <br />
 	          </ul>
 	        </section>
+					<section>
+						<h2>AES-Verschlüsselung</h2>
+							<ul>
+								<li>Industriestandard</li>
+								<li>gilt als ungebrochen (sogar von der NSA)</li>
+								<li>Hardwarebeschleunigung</li>
+								<li>What possibly could go wrong?</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Betriebsmodus: Electronic Codebook (EBC)</h2>
+							<ul>
+								<li>leaks information</li>
+								<li>CryptoPals: <a href="https://www.cryptopals.com/sets/1/challenges/8">Detect AES in ECB mode</a></li>
+							</ul>
+							<ul>
+					</section>
+				  <section>
+								<h2>Betriebsmodus</h2>
+								<ul>
+									<li>denn geeignetesten verfügaren auswählen</li>
+									<li>Modes that require padding: ECB (›unpraktisch‹), <strong>CBC</strong>; besser: AES+CBC+HMAC</li>
+									<li>Stream cipher modes: <strong>CTR</strong>, OFB, CFB z. B. <strong>AES-GCM+CTR</strong></li>
+									<li>Disk Encryption Modes: XEX, <strong>XTS</strong>, LRW (Achtung nur dafür verwenden)</li>
+								</ul>
+							</ul>
+					</section>
+					<section>
+						<h2>Authentificated Encryption</h2>
+						<ul>
+							<li>Authenticated Encryption with Associated Data (AEAD)</li>
+							<li>verhindert <a href="https://blog.skullsecurity.org/2013/a-padding-oracle-example">padding oracle attacks</a> (z. B. <a href="https://en.wikipedia.org/wiki/Lucky_Thirteen_attack">Lucky 13</a>)</li>
+							<li>erkennt Mainpualitionen am Chirrat (bei der Entschüsselunng)</li>
+							<li>fügt einen HMAC zur Verschlüsselung hinzu</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Encrypt-then-MAC (EtM)</h2>
+						<img src="images/Authenticated_Encryption_EtM.png"/>
+					</section>
+					<section>
+						<h2>Exkurs: Initialisierungsvektor (IV)</h2>
+						<ul>
+						 <li>Problem der Verknüpfung bei der Blockchiffierung</li>
+						 <li>CBC: Known Plaintext Attac (bekannter Klartext)</li>
+						 <li>Lösung: erste Klartextblock mit einem IV XOR-verknüpft</li>
+						 <li>IV muss für jeden gesammten Verschlüsslungsvorgang <strong>krptografisch sicher zufällig erzeugt</strong> werden</li>
+						 <li>vgl. Nonce (number used once, used only once)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Authentifizierte Verschlüsselung in C#</h2>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -691,7 +910,6 @@
 								<a href="https://otr.cypherpunks.ca/otr-wpes.pdf">https://otr.cypherpunks.ca/otr-wpes.pdf</a>
 							</li>
 						</ul>
-						<p>&nbsp;</p>
 						<h4>Forderungen an OTR</h4>
 						<ul>
 							<li>Beglaubigung <em>während</em> der Konversation</li>
@@ -706,7 +924,7 @@
 						<h4>Ende-zu-Ende Verschlüsselung implemeniteren</h4>
 						<ul>
 						  <li>Hoch gelobtes Code-Beipiel: Signal App (Java)</li>
-							<li>Wire App (Rust, Java)</li>
+							<li>Wire App (<a href="https://github.com/wireapp/proteus">Rust</a>, Java)</li>
 							<li>Double Ratchet in C#: <a href="https://github.com/langboost/libsignal-protocol-pcl">libsignal-protocol-pcl</a>?</li>
 							<li>Obsurity: Telegramm (bittet nicht nachmachen)</li>
 						</ul>
