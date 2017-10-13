@@ -29,7 +29,7 @@
 					<h4>Einstieg in Security by Design and Secure Coding</h4>
 					<p style="font-size:small;">
 						Stefan Etzold | Tobias Rademacher <br/>
-						12.10.2017
+						13.10.2017
 					</p>
 				</section>
 				<section>
@@ -70,7 +70,7 @@
 						</ul>
 					</section>
 					<section>
-						<img src="images/heartbleed_explanation.png"/>
+						<img src="images/heartbleed_explanation.png" height="500"/>
 					</section>
 					<section>
 						<h2><a href="https://medium.com/@neha/cryptographic-vulnerabilities-in-iota-9a6a9ddc4367">Cryptographic vulnerabilities in IOTA</a></h2>
@@ -98,6 +98,7 @@
 	          <h4>It's the econyomy, stupid!</h4>
 	          <ul>
 							<li><a href="http://arstechnica.com/security/2014/12/sloppy-security-hygiene-made-sony-pictures-ripe-for-hacking/">Sloppy security hygiene made Sony Pictures ripe for hacking</a></li>
+						    <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2594754"/>Big Other: Surveillance Capitalism and the Prospects of an Information Civilization</a></li>		
 	          </ul>
 	        </section>
 					<section>
@@ -147,11 +148,11 @@
 							<li>Weiterbildung, Training, Intressse</li>
 						</ul>
 					</section>
+					<!--section>
+						<img src="images/security_primer.png" height="500px"//>
+					</section-->
 					<section>
-						<img src="images/security_primer.png"/>
-					</section>
-					<section>
-						<img src="images/GrayHatC_cover.png"/>
+						<img src="images/GrayHatC_cover.png" height="500px"/>
 					</section>
 					<section>
 						<ul>
@@ -169,7 +170,7 @@
 					<section>
 						<h2>Bedrohungsmodell</h2>
 						<h4>Analyse</h4>
-						<img src="images/threat_model.png" height="500px"/>
+						<img src="images/threat_model.png" height="500" with="480"/>
 					</section>
 					<section>
 					<h2>Die W-Fragen</h2>
@@ -398,8 +399,8 @@ Console.Write("Enter password: ");
 					</ul>
 				</section>
 				<section>
-				<h2>Kryptologische Hashfunktion</h2>
-				<h4>Übersicht (Auswahl)</h2>
+				<h4>Kryptologische Hashfunktion</h4>
+				<h4>Übersicht (Auswahl)</h4>
 					<table>
 						<thead>
 							<tr>
@@ -442,18 +443,6 @@ Console.Write("Enter password: ");
 						</tbody>
 					</table>
 			 </section>
-					<section>
-						<h2>SHA3</h2>
-						<h4>Code-Bespiel C#</h4>
-					</section>
-					<section>
-						<h2>SHA3</h2>
-						<h4>Code-Bespiel Rust</h4>
-					</section>
-					<section>
-						<h2>Blake2</h2>
-						<h4>Code-Bespiel C#</h4>
-					</section>
 				</section>
 				<section>
 					<section>
@@ -469,8 +458,8 @@ Console.Write("Enter password: ");
 			     </ul>
 			   </section>
 			    <section>
-			     <h2>Schlüsselableidungsverfahren</h2>
-			     <h4>Übersicht (Auswahl)</h2>
+			     <h4>Schlüsselableidungsverfahren</h4>
+			     <h4>Übersicht (Auswahl)</h4>
 			       <table>
 			         <thead>
 			           <tr>
@@ -493,7 +482,7 @@ Console.Write("Enter password: ");
 			       </table>
 			   </section>
 				 <section>
-				 <h2>Schlüsselableidungsverfahren</h2>
+				 <h4>Schlüsselableidungsverfahren</h4>
 				 <h4>Übersicht (Auswahl)</h2>
 					 <table>
 						 <thead>
@@ -684,7 +673,7 @@ Console.Write("Enter password: ");
 						<ul>
 							<li>Authenticated Encryption with Associated Data (AEAD)</li>
 							<li>verhindert <a href="https://blog.skullsecurity.org/2013/a-padding-oracle-example">padding oracle attacks</a> (z. B. <a href="https://en.wikipedia.org/wiki/Lucky_Thirteen_attack">Lucky 13</a>)</li>
-							<li>erkennt Mainpualitionen am Chirrat (bei der Entschüsselunng)</li>
+							<li>erkennt Mainpualitionen am Chiffrat (bei der Entschüsselunng)</li>
 							<li>fügt einen HMAC zur Verschlüsselung hinzu</li>
 						</ul>
 					</section>
@@ -858,25 +847,12 @@ Console.Write("Enter password: ");
 							<li>Alternative: OpenSSL ? (Heartbleat, CREAM, usw.)</li>
 	          </ul>
 	        </section>
-					<section>
-	          <h2>SSL in .Net und C#</h2>
-	          <ul>
-							<li>SSLStream</li>
-							<li>Alternative OpenSSL</li>
-	          </ul>
 	        </section>
 					<section>
 	          <h2>SSL in Rust</h2>
 	          <ul>
 							<li>OpenSSL Bindings</li>
 							<li>Hoffnung: ring (Borring SSL)</li>
-	          </ul>
-	        </section>
-					<section>
-	          <h2>Konfiguration im WebServer</h2>
-	          <ul>
-							<li></li>
-							<li></li>
 	          </ul>
 	        </section>
 				</section>
